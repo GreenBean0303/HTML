@@ -1,0 +1,11 @@
+.minu-nupp {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.minu-nupp:hover {
+  background-color: #2980b9;
+}
