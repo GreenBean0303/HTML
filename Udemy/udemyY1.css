@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Sketch&display=swap');
+* {
+box-sizing: border-box;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo {
+float: left;
+}
+header>div {
+padding: 10px;
+font-family: "Bebas Neue", sans-serif;
+background-color: #eee;
+}
+.heading {
+font-size: 4em;
+color: black;
+padding: 10px;
+}
+.subheading {
+font-size: 2.5em;
+color: #333333;
+padding: 0 5px;
+margin-bottom: 30px;
+}
+.heading,
+.subheading {
+text-align: center;
+}
+header nav {
+margin: 0;
+}
+header nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+position: relative;
+float: left;
+}
+header nav ul li {
+display: inline-block;
+background-color: #ddd;
+}
+header nav a {
+display: block;
+padding: 0 10px;
+font-size: 1em;
+line-height: 40px;
+text-decoration: none;
+background-color: #222222;
+color: white;
+}
+header nav a:hover {
+background-color: red;
+color: white;
+}
+.menu {
+display: none;
+padding: 5px;
+}
+.menu:hover {
+background-color: blue;
+}
+.nav {
+clear: both;
+}
+.main {
+background-color: #eee;
+clear: both;
+}
+.main img {
+float: left;
+padding: 10px;
+max-width: 96%;
+border: 10px white solid;
+margin: 2%;
+}
+.main article {
+padding: 10px;
+font-size: 1.2em;
+border-bottom: 1px solid black;
+overflow: hidden;
+}
+.main article p::first-letter {
+font-size: 2em;
+color: green;
+}
+.footer:after {
+content: "";
+display: table;
+clear: both;
+}
+.footer {
+background-color: rgb(39, 37, 37);
+color: white;
+text-align: center;
+padding: 20px;
+}
+.footer>div {
+float: left;
+border: 1px solid #eee;
+}
+.first,
+.third {
+width: 25%;
+}
+.col {
+margin: auto;
+width: 80%;
+}
+.second {
+text-align: left;
+width: 50%;
+}
+.hidemenu {
+    display: none; /* Hide the menu by default */
+}
+
+.hide {
+    display: none; /* Default behavior to hide elements */
+}
+
+@media all and (max-width: 740px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    .subheading {
+        margin-bottom: 0px;
+    }
+
+    .heading {
+        padding: 0px;
+    }
+
+    .first,
+    .third {
+        width: 100%;
+    }
+
+    .col {
+        margin: auto;
+        width: 100%;
+    }
+
+    .second {
+        text-align: center;
+        width: 100%;
+    }
+
+    .second li {
+        list-style: none;
+    }
+
+    .hide {
+        display: block; 
+    }
+
+    .footer > div {
+        float: none; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
