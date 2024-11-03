@@ -1,0 +1,21 @@
+
+/* styles.css */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 auto 10px;
+    width: 80%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
