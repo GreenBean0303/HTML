@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Agnes Tiit">
+    <title>Teksti vormindamine</title>
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .taustakast {
+            background-color: #0074d9;
+            padding: 20px;
+            color: white;
+
+        }
+        .section1 {
+           background-color: #00f; /* Sinine taustavärv */
+           padding: 20px; /* Lisame sisu ümber 20px polsterduse */
+           color: white; /* Muudame teksti valgeks, et see oleks sinisel taustal loetav */
+       }
+
+       .section2 {
+           background-color: #0f0; /* Roheline taustavärv */
+           padding: 20px; /* Lisame sisu ümber 20px polsterduse */
+           color: black; /* Must tekst rohelise taustal */
+       }
+
+       .section3 {
+           background-color: #ff0; /* Kollane taustavärv */
+           padding: 20px; /* Lisame sisu ümber 20px polsterduse */
+           color: black; /* Must tekst kollase taustal */
+       }
+       img {
+          width: 300px; /* Pildi laius on 300 pikslit */
+          height: 200px; /* Pildi kõrgus on 200 pikslit */
+          border: 5px solid #333; /* Pildile lisatud 5px laiune tumehall raam */
+          border-radius: 15px; /* Raami nurgad on 15px raadiusega ümarad */
+      }
+      button {
+           background-color: #007BFF; /* Helesinine taustavärv */
+           color: white; /* Teksti värv on valge */
+           padding: 10px 20px; /* Lisatud sisemine ruum: 10px vertikaalselt ja 20px horisontaalselt */
+           border: none; /* Ääriseta nupp */
+           border-radius: 10px; /* Nupu nurgad on ümarad, raadius 10px */
+           font-size: 16px; /* Teksti suurus on 16px */
+           cursor: pointer; /* Muudab kursorit käe kujuliseks, kui liigud nupu kohale */
+       }
+
+       button:hover {
+           background-color: #0056b3; /* Tumedam sinine hover-efekt */
+       }
+       #roheline-nupp {
+           background-color: #4caf50; /* Roheline taustavärv (#4caf50) */
+           color: white; /* Teksti värv on valge */
+           padding: 10px 20px; /* Nupule lisatud sisemine ruum: 10px vertikaalselt ja 20px horisontaalselt */
+           border: none; /* Eemaldatud ääris */
+           border-radius: 5px; /* Nupu nurgad on 5px ümardatud */
+           font-size: 16px; /* Nupu teksti suurus on 16px */
+           cursor: pointer; /* Muudab kursorit käe kujuliseks, kui liigud nupu kohale */
+       }
+
+       /* Hover-efekt nupule */
+       #roheline-nupp:hover {
+           background-color: #45a049; /* Hover-efektiga muutub nupu värv tumeroheliseks */
+       }
+
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <h1>Peekoni burgeri kirjeldus</h1>
+    <p>
+        Peekoni burger on rasvasem kui tavaline burger, sest see sisaldab peekonit, milles on 40%-50% rasva.
+    </p>
+
+    <div class="taustakast">
+           See on sinise taustaga kast, millele on lisatud tekst. CSS-i abil määrasime taustavärviks sinise ja tekstivärviks valge.
+       </div>
+
+       <div class="section1">
+       <h2>Esimene sektsioon - Sinine taust</h2>
+       <p>Selle sektsiooni taustavärv on sinine ja tekst on valge.</p>
+   </div>
+
+
+   <div class="section2">
+       <h2>Teine sektsioon - Roheline taust</h2>
+       <p>Selle sektsiooni taustavärv on roheline ja tekst on must.</p>
+   </div>
+
+
+   <div class="section3">
+       <h2>Kolmas sektsioon - Kollane taust</h2>
+       <p>Selle sektsiooni taustavärv on kollane ja tekst on must.</p>
+   </div>
+
+
+
+   <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*6Ukzy9YDn1FYRDjG-1_FIA@2x.jpeg" alt="Filthy Frank">
+
+    <button id="roheline-nupp">Vajuta mind</button>
+
+   <button>Saada</button>
+</body>
+</html>

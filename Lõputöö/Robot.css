@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Londrina+Sketch&family=Orbitron:wght@400..900&family=Signika:wght@300..700&display=swap');
+/* Üldised stiilid */
+* {
+    margin:0 ;
+    padding:0 ;
+    box-sizing:border-box ;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5px;
+}
+/* Keha ja HTML stiilid */
+html, body {
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    padding: 5px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+/*TEXT/CONTAINER/IMG STYLES*/
+
+.text-primary {
+    color:#575757
+}
+.text-center {
+    text-align: center;
+}
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.bg-light {
+    background: #fcfcfc;
+    color: #575757
+}
+
+.bg-primary{
+    background: #CA9CE1;
+    color: #575757;
+}
+.img{
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #174ad8; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+video {
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #174ad8; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0)
+}
+
+/*MENÜÜ RIBA*/
+#navbar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ca9ce1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.placement{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+#navbar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+}
+#navbar li:hover .submenu {
+    display: block; 
+}
+
+#navbar li {
+    position: relative; 
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar .submenu {
+    display: none; 
+    list-style-type: none;
+    padding-left: 15px;
+    margin: 0;
+    background-color: #bfa8d6; 
+}
+#navbar .submenu a {
+    padding: 10px 15px;
+    color: white;
+    background-color: #bfa8d6; 
+    display: block;
+    text-align: left;
+}
+#navbar .submenu a:hover {
+    background-color: #8a76b1; 
+}
+#navbar li:hover > .submenu {
+    display: block;
+}
+
+/*SHOWCASE*/
+
+.showcase-content {
+    margin-left: 200px;
+    padding: 20px;
+
+}
+#showcase {
+    background: url(https://cdn.pixabay.com/photo/2022/02/15/10/35/hand-7014643_960_720.jpg)no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*BUTTON*/
+.btn {
+    padding: 5px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #CA9CE1;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #BA7BD9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.btn:hover {
+    box-shadow: 0 2px #BA7BD9;
+    transform: translateY(2px);
+}
+/*Code section */
+pre {
+    background-color: #b3599525; 
+    color: #333; 
+    padding: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #ccc; 
+    overflow-x: auto; 
+    white-space: pre-wrap; 
+    margin: 10px 0; 
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 0.9em; 
+    display: block; 
+}
+
+
+/*CONTACT SECTION*/
+#contact {
+    display: flex;
+    gap: 2rem; 
+    max-width: 2700px; 
+    margin-left: 200px;
+    padding: 20px;
+    background: #575757
+}
+
+#contact .contact-form {
+    max-width: 100%; 
+}
+
+
+#contact .contact-form .form-group {
+    margin: 1rem;
+}
+#contact .contact-form .form-group label {
+    display: block;
+}
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+}
+#contact .contact-form .form-group input:focus,
+#contact .contact-form .form-group textarea:focus {
+    outline: none;
+    border:#333 solid 1px;
+}
+/*Footer SECTION*/
+#footer {
+    text-align: center;
+    padding: 20px;
+    background: rgb(14, 13, 13);
+    color: #fff;
+}

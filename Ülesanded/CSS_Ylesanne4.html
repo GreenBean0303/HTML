@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ülesanne 4</title>
+    <style>
+        /* 2.1 Paigutuse loomine */
+        header, footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 2.2 Linkide stiilimine */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* 2.3 Klasside ja ID-de kasutamine */
+        .box1 {
+            background-color: #f8d7da;
+            padding: 20px;
+            margin: 10px;
+        }
+        .box2 {
+            background-color: #d4edda;
+            padding: 20px;
+            margin: 10px;
+        }
+        #special {
+            background-color: #cce5ff;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* 2.4 Varjud ja animatsioonid */
+        .shadow-box {
+            width: 200px;
+            height: 200px;
+            background-color: #bbb;
+            box-shadow: 10px 10px 20px rgba(0, 2, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .shadow-box:hover {
+            box-shadow: 20px 20px 30px rgba(0, 2, 0, 0.4);
+            transform: translateY(-100px);
+        }
+
+        /* 2.5 Pseudo-klassid ja -elemendid */
+        p:hover {
+            color: #ff0000;
+        }
+        p::before {
+            content: "Loe seda: ";
+            color: #007BFF;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <!-- 2.1 Paigutuse loomine -->
+       <header>
+           <h1>Päis</h1>
+       </header>
+
+       <main>
+           <h2>Sisu</h2>
+           <p>See on veebilehe sisu.</p>
+       </main>
+
+       <footer>
+           <p>Jalus</p>
+       </footer>
+   </div>
+
+   <!-- 2.2 Linkide stiilimine -->
+   <div>
+       <h2>Lingid</h2>
+       <a href="https://en.wikipedia.org/wiki/Orange_(fruit)">Ava mind kui julged</a>
+       <a href="https://en.wikipedia.org/wiki/Apple">Ära mind ava, ma ei taha teada, mis seal on</a>
+   </div>
+
+   <!-- 2.3 Klasside ja ID-de kasutamine -->
+   <div class="box1">Mina olen kast</div>
+   <div class="box2">Ma olen sammuti kast, aga lihtsalt teine</div>
+   <div id="special">Ma olen kaon ära natuke</div>
+
+   <!-- 2.4 Varjud ja animatsioonid -->
+   <div class="shadow-box">opaaa!</div>
+
+   <!-- 2.5 Pseudo-klassid ja -elemendid -->
+   <p>Pane hiir siia </p>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width">
+    <title>Iseuuenev copyright vesimärk</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Ülesanne 7.1</h1>
+    <form action="mailto:agnes.lootsmann@voco.ee" method="post">
+
+
+     <label for="name">Nimi:</label>
+     <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+  <div>
+     <label>Mis sa arvad tänasest päevast?</label><br>
+     <input type="radio" name="feedback" value="hea">
+     <label for="good">Hea päev</label><br>
+     <input type="radio" name="feedback" value="keskmine">
+     <label for="average">Keskmine päev</label><br>
+     <input type="radio" name="feedback" value="halb">
+     <label for="bad">Halb päev</label>
+ </div>
+
+  <div>
+   <label for="food">Lemmik söök:</label>
+    <select name="food">
+     <option value="Jäätis">Jäätis</option>
+     <option value="Pitsa">Pitsa</option>
+     <option value="Hamburger">Hamburger</option>
+     <option value="Oliivid">Oliivid</option>
+    </select>
+  </div>
+
+
+  <div>
+   <label for="comments">Kommentaarid:</label><br>
+   <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Kirjuta meile oma murest :)"></textarea>
+  </div>
+
+
+  <div>
+   <input type="checkbox" id="agreement" name="agreement" value="jah">
+   <label for="agreement">Jah, olen nõus oma andmeid jagama.</label>
+  </div>
+
+  <input type="submit" value="Saada vorm!">
+  </form>
+
+
+    <h1>Ülesanne 7.2</h1>
+    <img src="https://www.maheseemned.ee/media/images/p/w469/2016-MjAxNjAzMjAwNjAyMjg.jpg" alt="Kõrvits" width="200px" height="200px">
+
+
+    <div>
+      <label>See on kõrvits</label><br>
+      <label>
+      <input type="button" value="Tõene" onclick="checkAnswer(true)">
+      </label>
+      <label>
+        <input type="button" value="Väär" onclick="checkAnswer(false)">
+      </label>
+
+
+    </div>
+
+    <footer>
+      <hr style="border: none; border-top: 3px solid black; width: 40%; margin: 0 auto;">
+      <p>&copy; <span id="current-year"></span> Agnes Tiit. Kõik õigused kaitstud.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    </body>
+
+</html>

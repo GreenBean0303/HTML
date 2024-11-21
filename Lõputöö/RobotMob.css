@@ -1,0 +1,93 @@
+@media screen and (max-width: 600px) {
+    /* NAVBAR*/
+    #navbar {
+        width: 100%; 
+        height: auto; 
+        position: relative;
+        padding-top: 10px;
+    }
+
+    #navbar ul {
+        flex-direction: column; 
+        align-items: center;
+        padding: 0;
+    }
+
+    #navbar a {
+        padding: 8px;
+        font-size: 16px;
+        text-align: center; 
+    }
+    .submenu {
+        display: none;
+    }
+    .active > .submenu {
+        display: block;
+    }
+
+    /* placement */
+    .placement {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /*images */
+    .img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        padding: 5px;
+        border: 2px solid #ca9ce1; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+    /*showcase section */
+    #showcase {
+        height: auto; /* Allow height to adjust */
+        padding: 20px;
+        background-size: cover;
+    }
+
+    #showcase .showcase-content {
+        margin-left: 0; /* Remove margin for mobile */
+        padding: 1rem;
+    }
+
+    /* Button */
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    /*Code section */
+    pre {
+        background-color: #b3599525; 
+        color: #333; 
+        padding: 5px; 
+        border-radius: 6px; 
+        border: 1px solid #ccc; 
+        overflow-x: auto; 
+        white-space: pre-wrap; 
+        margin: 10px 0; 
+        word-wrap: break-word;
+    }
+    
+    code {
+        font-family: 'Courier New', Courier, monospace; 
+        font-size: 0.4em; 
+        display: block; 
+    }
+
+
+    /* Contact */
+    #contact {
+        flex-direction: column; 
+        margin-left: 0;
+        padding: 10px;
+    }
+    #footer {
+        text-align: center;
+        padding: 20px;
+        background: rgb(14, 13, 13);
+        color: #fff;
+    }
+}

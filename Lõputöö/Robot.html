@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metaandmed lehe kohta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Agnes Tiit"> 
+    <meta name="description" content="Õpime mitmelehelist veebilehte looma">
+    <meta name="keywords" content="HTML,HTML5">
+    <!-- FontAwesome ikoonide lisamiseks -->
+    <script src="https://kit.fontawesome.com/717395d727.js" crossorigin="anonymous"></script>
+    <!-- CSS stiililehed -->
+    <link rel="stylesheet" href="Robot.css">
+    <link rel="stylesheet" href="RobotMob.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="RobotMob.css">
+    <title>Roboti ehitamise õpetus</title>
+</head>
+<body id="home">
+    <!-- MENU/SUBMENU BAR SECTION -->
+    <nav id="navbar">
+        <h1>Mini-roboti ehitamine</h1>
+        <ul>
+             <!-- Navigatsioonimenüü -->
+            <li><a href="#home">Avaleht</a></li>
+            <li><a href="#what">Mida vaja?</a>
+                <!-- Alammenüü -->
+                <ul class="submenu">
+                    <li><a href="#mikrokontroller">Mikrokontroller</a></li>
+                    <li><a href="#mootorijuhtimis_moodul">Mootorijuhtimis moodul</a></li>
+                    <li><a href="#mootor">Mootor</a></li>
+                    <li><a href="#sensorid">Sensorid</a></li>
+                    <li><a href="#aku">Aku/Patarei</a></li>
+                    <li><a href="#rattad">Rattad</a></li>
+                    <li><a href="#juhtmed">Juhtmed</a></li>
+                    <li><a href="#lüliti">Lüliti</a></li>
+                    <li><a href="#kere">Kere</a></li>
+                </ul>
+            </li>
+            <!-- Navigatsioonimenüü -->
+            <li><a href="#how">Kuidas teha?</a>
+                <!-- Alammenüü -->
+                <ul class="submenu">
+                    <li><a href="#Samm_1">Samm 1</a></li>
+                    <li><a href="#Samm_2">Samm 2</a></li>
+                    <li><a href="#Samm_3">Samm 3</a></li>
+                    <li><a href="#Samm_4">Samm 4</a></li>
+                    <li><a href="#Samm_5">Samm 5</a></li>
+                    <li><a href="#Samm_6">Samm 6</a></li>
+                    <li><a href="#Samm_7">Samm 7</a></li>
+                    <li><a href="#Kood">Samm 8</a></li>
+                    <li><a href="#Tulemus">Tulemus</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+<!-- SHOWCASE SECTION-->
+
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1>Ehita oma esimene robot</h1>
+            <p>Oled mõelnud robootikale ,aga ei tea kust alustada?</p>
+            <a href="#what" class="btn">Loe Rohkem</a>
+        </div>
+    </header>
+
+<!-- MIDA VAJA? SEKTSIOON -->
+
+    <section id="what" class="bg-light placement">
+        <div class="container">
+            <h2 class="m-heading">Mida vaja?</h2>
+                <div>
+                    <!-- Materjalide ostu soovitus -->
+                    <p>Suuremosa komponente saad osta <a href="https://www.oomipood.ee/" class="btn" target="_blank">Oomipoest</a></p>
+                    <div>
+                         <!-- Mikrokontrolleri kirjeldus -->
+                        <div>
+                            <h3 id="mikrokontroller">Mikrokontroller</h3>
+                            <p>Mikrokontroller toimib roboti "ajuna", koordineerides selle 
+                                tegevusi ja tehes otsuseid sisestatud koodi põhjal. 
+                                Mikrokontroller juhib mootoreid ja ajameid, näiteks rattaid, 
+                                andes neile juhiseid liikumiseks või muude ülesannete täitmiseks. 
+                                Samuti loeb see sisendeid erinevatelt sensoritelt - näiteks 
+                                kaugus-, valgus-, temperatuuri- ja puutesensoritelt -, et 
+                                robot saaks oma ümbrust paremini mõista ning sellele reageerida. </p>
+                                <a href="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/mikrokontroller.jpg" target="_blank">
+                                    <img src="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/mikrokontroller.jpg" alt="Mikrokontroller" class="img">
+                                </a>                                
+                                
+                        </div>
+                        <div>
+                            <!-- Mootorijuhtimis mooduli kirjeldus -->
+                            <h3 id="mootorijuhtimis_moodul">Mootori juhtimis moodul</h3>
+                            <p>
+                                Komponent, mis võimaldab juhtida mootoreid, näiteks roboti rataste liikumist või muid mehaanilisi liikumisi. 
+                                See moodul ühendab roboti juhtarvuti (näiteks mikrokontrolleri või arduino) ja mootori(d), 
+                                võimaldades edastada elektrilisi signaale, mis kontrollivad mootori kiirust, suunda ja jõudu. 
+                                See on vajalik, kuna mikrokontroller ei suuda toita mootoreid üksinda ning abistab täpsete liikumiskäskude täitmisel.
+                            </p>
+                            <a href="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/mootorijuhtimis%20moodul.jpg" target="_blank">
+                                <img src="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/mootorijuhtimis%20moodul.jpg" alt="Mootorijuhtimise moodul" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Mootorite kirjeldus -->
+                            <h3 id="mootor">Mootor</h3>
+                            <p>Mootoreid on erinevaid tüüpi, kuid selle projekti jaoks kasutame DC-mootired,
+                                mis juhivad rattaid, et robot saaks liikuda edasi, tagasi või pöörata. Sensorite abil saab jälgida pöörlemise täpsust ja 
+                                kiirust, võimaldades robotil navigeerida täpsemalt. Mootorite arvust ja paigaldusest tuleneb roboti liikumisvabadus. 
+                            </p>
+                            <a href="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/Mootorid.jpg" target="_blank">
+                                <img src="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/Mootorid.jpg" alt="mootorid" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Sensorite kirjeldus -->
+                            <h3 id="sensorid" >Sensorid</h3>
+                            <p>Sensorid annavad robotile võimaluse oma keskkonda „tajuda” - näha, kuulda, tunda ja mõõta ümbritsevat, et kohandada oma tegevusi saadud teabe põhjal. 
+                                Tänu sensoritele saavad robotid töötada iseseisvalt ja reageerida kiiresti muutuvatele tingimustele. 
+                                Selles projektis kasutame kaugussensorit, mis mõõdab vahemaid objektideni kasutades helilaineid, võimaldades robotil takistusi tuvastada ja vältida.
+                            </p>
+                            <a href="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/Sensor.jpg" target="_blank">
+                                <img src="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/Sensor.jpg" alt="Sensor" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Aku kirjeldus -->
+                            <h3 id="aku">Aku/Patarei</h3>
+                            <p>Aku on üks peamisi energiavarusid, mis võimaldab robotil töötada autonoomselt 
+                                ilma juhtmevaba ühenduseta. Aku annab elektrit kõikidele komponentidele, 
+                                sealhulgas mootoritele, anduritele ja mikrokontrollerile. Projektiks kasutame tavapoes müüdavaid 9V patareid. </p>
+                                <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241118_132938269.jpg" target="_blank">
+                                    <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241118_132938269.jpg" alt="Aku/Patarei" class="img">
+                                </a>
+                        </div>
+                        <div>
+                            <!-- Rataste kirjeldus -->
+                            <h3 id="rattad">Rattad</h3>
+                            <p>Rattad on üks lihtsamaid ja levinumaid 
+                                liikumisviise, kuna need võimaldavad sujuvat ja
+                                täpset liikumist erinevatel pindadel. Otsustasime need 3D-printida, kuid saad kasutada ka kodust leiduvaid ümaraid objekte, näiteks pudelikork.</p>
+                                <a href="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/Rattad.jpg" target="_blank">
+                                    <img src="https://vs24tiit.ita.voco.ee/Veebiarendus/Robot/Rattad.jpg" alt="rattad" class="img">
+                                </a>
+                        </div>
+                        <div>
+                            <!-- Juhtmete kirjeldus -->
+                            <h3 id="juhtmed">Juhtmed</h3>
+                            <p>Juhtmed on robotis olulised, kuna need ühendavad erinevad komponendid,
+                                näiteks aku, mootorid, mikrokontrolleri ja andurid, võimaldades
+                                elektrienergia ja signaalide edastamist. Juhtmete kvaliteet ja 
+                                paigutus mõjutavad otseselt roboti töökindlust ja tõhusust.</p>
+                                <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_161709275.jpg" target="_blank">
+                                    <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_161709275.jpg" alt="Juhtmed" class="img">
+                                </a>
+                        </div>
+                        <div>
+                            <!-- Lüliti kirjeldus -->
+                            <h3 id="lüliti">Lüliti</h3>
+                            <p>Lüliti abil on mugav lahti ühendada aku väljaspool korpust.</p>
+                                <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241118_181551166.jpg" target="_blank">
+                                    <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241118_181551166.jpg" alt="Lüliti" class="img">
+                                </a>
+                        </div>
+                        <div>
+                            <!-- Kere kirjeldus -->
+                            <h3 id="kere">Kere</h3>
+                            <p>Roboti kere ehk raam on roboti füüsiline struktuur või "skelett", 
+                                mis ühendab ja toetab kõiki selle komponente, nagu mootorid, akud, 
+                                mikrokontroller, sensorid ja muud osad. Roboti kere mängib olulist 
+                                rolli selle vastupidavuses, 
+                                stabiilsuses ja liikumises ning on oluline osa roboti disainist. 
+                                Selle projekti roboti 3D-mudeli skelettist ja ratastest saad 
+                                <a href="https://cad.onshape.com/documents/bea552ed1acdd989bbaf560f/w/e3e02310d638ac5e277240fc/e/066ee64875222f9991eb8099" class="btn" target="_blank">siit</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    <!-- kUIDAS TEHA? SEKTSIOON -->
+
+    <section id="how" class="bg-light placement">
+        <div class="container">
+            <h2 class="m-heading">Kuidas teha?</h2>
+                <div>
+                    <div>
+                        <div>
+                            <!-- Samm 1 kirjeldus -->
+                            <h3 id="Samm_1">1.Samm</h3>
+                            <p>Ühenda omavahel mikrokontroller ja mootori juhtimis mooduli.</p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_132346765.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_132346765.jpg" alt="Step 1" class="img">
+                            </a>
+                            
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_132502949.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_132502949.jpg" alt="Step 1" class="img">
+                            </a>
+                            
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_132823440.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_132823440.jpg" alt="Step 1" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Samm 2 kirjeldus -->
+                            <h3 id="Samm_2">2.Samm</h3>
+                            <p> Pane mootorid skeletti.
+                            </p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_164328922.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_164328922.jpg" alt="Step 2" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Samm 3 kirjeldus -->
+                            <h3 id="Samm_3">3.Samm</h3>
+                            <p> Ühenda sensor mootori juhtimis mooduliga.Ühe juhtme pead mootori juhtimis mooduli külge jootma. 
+                                Ühendus nimega "echo" ühendada pesasse nr 13 ja "trig" ühendada nr 2. 
+                                Ultraheli sensoril on veel ühendused Vcc ja GND, mida tuleb ühendada pesadesse 5V ja GND.(Vcc -> 5V)(GND -> GND)
+                            </p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_181442703.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_181442703.jpg" alt="Step 3" class="img">
+                            </a>
+                            
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_181456078.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_181456078.jpg" alt="Step 3" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Samm 4 kirjeldus -->
+                            <h3 id="Samm_4">4.Samm</h3>
+                            <p>Ühenda mootori juhtmed mootori juhtimis mooduli.</p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_194106094.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_194106094.jpg" alt="Step 4" class="img">
+                            </a>
+                            
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_194123356.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_194123356.jpg" alt="Step 4" class="img">
+                            </a>
+                            
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_194141882.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_194141882.jpg" alt="Step 4" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Samm 5 kirjeldus -->
+                            <h3 id="Samm_5">5.Samm</h3>
+                            <p>Ühenda aku juhe ja aku omavahel.</p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_202606180.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_202606180.jpg" alt="Step 5" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Samm 6 kirjeldus -->
+                            <h3 id="Samm_6">6.Samm</h3>
+                            <p>Ühenda 3D-prinditud rattad mootorite külge.</p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_202615945.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_202615945.jpg" alt="Step 6" class="img">
+                            </a>
+                        </div>
+                        <div>
+                            <!-- Samm 7 kirjeldus -->
+                            <h3 id="Samm_7">7.Samm</h3>
+                            <p> Ühenda lüliti aku juhtme külge, selleks lõikame aku punase juhtme pooleks ja ühendame nagu pildil.</p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_225210846.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_225210846.jpg" alt="Step 7" class="img">
+                            </a>
+                        </div>
+                        <div id="Kood">
+                            <!-- Samm 8 kirjeldus -->
+                            <h3>8.Samm</h3>
+                            <p> Kasutades Arduino IDE, lae robotisse see kood. Kiirust saad ise muuta.</p>
+                            <pre><code class="language-cpp">
+                                // C++ kood roboti automaatjuhtimiseks kasutades AFMotor teeki.
+                                #include &lt;AFMotor.h&gt;
+                                
+                                AF_DCMotor motorRB(4); // Right Back motor
+                                AF_DCMotor motorRF(3); // Right Front motor
+                                AF_DCMotor motorLB(2); // Left Back motor
+                                AF_DCMotor motorLF(1); // Left Front motor
+                                
+                                // Ultrasonic sensor pins
+                                const int trigPin = 2;
+                                const int echoPin = 13;
+                                
+                                void setup() {
+                                  // Initialize motor speeds
+                                  motorRB.setSpeed(200);
+                                  motorRF.setSpeed(200);
+                                  motorLB.setSpeed(200);
+                                  motorLF.setSpeed(200);
+                                
+                                  // Set ultrasonic sensor pins
+                                  pinMode(trigPin, OUTPUT);
+                                  pinMode(echoPin, INPUT);
+                                
+                                  Serial.begin(9600); // Initialize serial communication for debugging
+                                }
+                                
+                                void loop() {
+                                  // Measure distance using the ultrasonic sensor
+                                  long duration, distance;
+                                  digitalWrite(trigPin, LOW);
+                                  delayMicroseconds(2);
+                                  digitalWrite(trigPin, HIGH);
+                                  delayMicroseconds(10);
+                                  digitalWrite(trigPin, LOW);
+                                
+                                  duration = pulseIn(echoPin, HIGH);
+                                  distance = duration * 0.034 / 2; // Convert to centimeters
+                                
+                                  // Debugging output
+                                  Serial.print("Distance: ");
+                                  Serial.print(distance);
+                                  Serial.println(" cm");
+                                
+                                  // Robot movement logic based on distance
+                                  if (distance < 20) {
+                                    stopMotors();
+                                    turnLeft(); // Turn left if an obstacle is detected
+                                  } else {
+                                    moveForward(); // Move forward if no obstacles
+                                  }
+                                
+                                  delay(100);
+                                }
+                                
+                                void moveForward() {
+                                  motorRB.setSpeed(200);
+                                  motorRF.setSpeed(200);
+                                  motorLB.setSpeed(200);
+                                  motorLF.setSpeed(200);
+                                
+                                  motorRB.run(FORWARD);
+                                  motorRF.run(FORWARD);
+                                  motorLB.run(FORWARD);
+                                  motorLF.run(FORWARD);
+                                }
+                                
+                                void stopMotors() {
+                                  motorRB.run(RELEASE);
+                                  motorRF.run(RELEASE);
+                                  motorLB.run(RELEASE);
+                                  motorLF.run(RELEASE);
+                                }
+                                
+                                void turnLeft() {
+                                  motorRB.setSpeed(150);
+                                  motorRF.setSpeed(150);
+                                  motorLB.setSpeed(150);
+                                  motorLF.setSpeed(150);
+                                
+                                  motorRB.run(FORWARD);
+                                  motorRF.run(BACKWARD);
+                                  motorLB.run(FORWARD);
+                                  motorLF.run(BACKWARD);
+                                
+                                  delay(500); // Adjust turn delay as needed
+                                
+                                  stopMotors();
+                                }
+                                    </code></pre>
+                        </div>
+                        <div>
+                            <!-- Tulemus -->
+                            <h3 id="Tulemus">Tulemus</h3>
+                            <p></p>
+                            <a href="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_230311854.jpg" target="_blank">
+                                <img src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/IMG_20241117_230311854.jpg" alt="Final Result" class="img">
+                            </a>
+                            <video controls width="400">
+                                <source src="http://vs24tiit.ita.voco.ee/Veebiarendus/Robot/VID_20241118_183856912.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    <!--KONTAKTI SEKTSIOON-->
+    <section id="contact">
+        <div class="contact-form">
+            <h2 class="m-heading text-center">Võta minuga <span class="text">ühendust</span></h2>
+            <p>Kui sul on küsimusi või soovid rohkem teavet, täida allolev vorm ja võtame teiega ühendust.</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Nimi:</label>
+                        <input type="text" id="name" placeholder="Sisesta oma nimi">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" placeholder="Sisesta email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="phone" id="phone" placeholder="Sisesta oma telefoni number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Sõnum:</label>
+                        <textarea id="message" rows="5" placeholder="Sisesta oma sõnum" required></textarea>
+                    </div>
+                    <input type="submit" value="Saada" class="btn btn-light">
+                </form>
+            </div>
+    </section>
+    <!-- JALUS -->
+    <section id="footer" class="text-center">
+        <p>Agnes Tiit &copy; 2024</p>
+    </section>
+
+ <!-- JavaScript -->
+<script src="Robot.js"></script>
+</body>
+</html>
